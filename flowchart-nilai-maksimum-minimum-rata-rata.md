@@ -13,7 +13,7 @@ pengubah@{shape: rect, label: i++}
 stop@{shape: dbl-circ, label: "stop"}
 isNilaiMinimumLower@{shape: diamond, label: "nilaiMinimum < gabunganHasilUjian[i]"}
 nilaiMinimum@{shape: lean-r, label: "nilaiMinimum = gabunganHasilUjian[i]"}
-nilaiRataRata@{shape: lean-r, label: "nilaiRataRata = (nilaiRata-Rata + gabunganHasilUjian[i]) / gabunganHasilUjian.length"}
+nilaiRataRata@{shape: lean-r, label: "nilaiRataRata = (nilaiRataRata + gabunganHasilUjian[i]) / gabunganHasilUjian.length"}
 
 
 start-->input
