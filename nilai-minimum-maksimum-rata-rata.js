@@ -11,7 +11,7 @@ let nilaiRataRata = 0
 for (i=0; i<gabunganHasilUjian.length; i++) {
     nilai = gabunganHasilUjian[i]
 
-    nilaiRataRata = (nilaiRataRata + nilai) / gabunganHasilUjian.length
+    nilaiRataRata = (nilaiRataRata + nilai)
 
     if (nilai > nilaiMaksimum) {
         nilaiMaksimum = nilai
@@ -20,7 +20,7 @@ for (i=0; i<gabunganHasilUjian.length; i++) {
     }   
 }
 
-
+nilaiRataRata = nilaiRataRata / gabunganHasilUjian.length
 
 console.log(nilaiMaksimum)
 console.log(nilaiMinimum)
