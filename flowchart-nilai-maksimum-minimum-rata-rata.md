@@ -13,8 +13,8 @@ pengubah@{shape: rect, label: i++}
 stop@{shape: dbl-circ, label: "stop"}
 isNilaiMinimumBigger@{shape: diamond, label: "nilaiMinimum > gabunganHasilUjian[i]"}
 nilaiMinimum@{shape: lean-r, label: "nilaiMinimum = gabunganHasilUjian[i]"}
-nilaiRataRata@{shape: lean-r, label: "nilaiRataRata = (nilaiRataRata + gabunganHasilUjian[i]) / gabunganHasilUjian.length"}
-
+nilaiRataRata@{shape: lean-r, label: "nilaiRataRata = nilaiRataRata + gabunganHasilUjian[i]"}
+nilaiRataRata2@{shape: lean-r, label: "nilaiRataRata = nilaiRataRata / gabunganHasilUjian.length"}
 
 start-->input
 input-->input2
@@ -22,7 +22,8 @@ input2-->initLoop
 initLoop-->conditionLoop
 conditionLoop--True-->nilaiRataRata
 nilaiRataRata-->isNilaiMaksimumLower
-conditionLoop--False-->stop
+conditionLoop--False-->nilaiRataRata2
+nilaiRataRata2-->stop
 isNilaiMaksimumLower--True-->nilaiMaksimum
 nilaiMaksimum-->pengubah
 pengubah-->conditionLoop
