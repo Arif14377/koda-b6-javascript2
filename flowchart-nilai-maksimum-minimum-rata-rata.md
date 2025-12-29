@@ -21,14 +21,14 @@ input-->input2
 input2-->initLoop
 initLoop-->conditionLoop
 conditionLoop--True-->nilaiRataRata
-nilaiRataRata-->isNilaiMaksimumBigger
+nilaiRataRata-->isNilaiMaksimumLower
 conditionLoop--False-->stop
-isNilaiMaksimumBigger--True-->nilaiMaksimum
+isNilaiMaksimumLower--True-->nilaiMaksimum
 nilaiMaksimum-->pengubah
 pengubah-->conditionLoop
-isNilaiMaksimumBigger--False-->isNilaiMinimumLower
-isNilaiMinimumLower--True-->nilaiMinimum
+isNilaiMaksimumLower--False-->isNilaiMinimumBigger
+isNilaiMinimumBigger--True-->nilaiMinimum
 nilaiMinimum-->pengubah
-isNilaiMinimumLower--False-->pengubah
+isNilaiMinimumBigger--False-->pengubah
 
 ```
